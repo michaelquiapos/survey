@@ -7880,15 +7880,15 @@ select:focus, input:focus, textarea:focus {
   color: white;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+/* iPad Landscape | Portrait tablets and up */
+@media only screen and (min-width: 768px) {
   /* line 207, main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 214, main.scss */
+  /* line 213, main.scss */
   .header,
   .marketing,
   .footer {
@@ -7897,14 +7897,51 @@ select:focus, input:focus, textarea:focus {
   }
 
   /* Space out the masthead */
-  /* line 219, main.scss */
+  /* line 218, main.scss */
   .header {
     margin-bottom: 30px;
   }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 223, main.scss */
-  .jumbotron {
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 227, main.scss */
+  .header {
     border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  /* line 231, main.scss */
+  #msform {
+    width: 100%;
+  }
+
+  /* line 234, main.scss */
+  #progressbar {
+    display: none;
   }
 }
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  /* line 240, main.scss */
+  .header {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  /* line 244, main.scss */
+  .nav > li > a {
+    padding: 10px 5px;
+  }
+
+  /* line 247, main.scss */
+  #msform {
+    width: 100%;
+  }
+
+  /* line 250, main.scss */
+  #progressbar {
+    display: none;
+  }
+}
+/* DEVICE SPECIFIC: Samsung Galaxy S4 and other Galaxy devices */
